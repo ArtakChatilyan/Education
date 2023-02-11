@@ -1,0 +1,99 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}
+
+:root {
+
+  --color-back-primary: #fff;
+  --color-back-secondary: #f1f1f1;
+  --color-back-footer: #1a1a1a;
+  --color-accent: #27ae60;
+  --color-heading: #1a1a1a;
+  --color-text-primary: #484848;
+  --color-text-secondary: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+h1{
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+h2{
+  font-size: 3.6rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+h4{
+  font-size: 2.4rem;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Nunito Sans', sans-serif;;
+  margin: 0;
+}
+
+h2, h3{
+  color: var(--color-heading);
+}
+
+@media screen and(min-width: 768px) {
+  body{
+    font-size: 1.8rem;
+  }
+  h1{
+    font-size: 7.2rem;
+  }
+  h2{
+    font-size: 4.8rem;
+  }
+  h3{
+    font-size: 3.6rem;
+  }
+  h4{
+    font-size: 3rem;
+  }
+}
