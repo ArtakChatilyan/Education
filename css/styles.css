@@ -102,23 +102,22 @@ h3 {
 }
 
 /* Icons */
-.icon{
-  
+.icon {
 }
 
-.icon--small{
-width: 30px;
+.icon--small {
+  width: 30px;
 }
 
-.icon--medium{
+.icon--medium {
   width: 40px;
 }
 
-.icon--big{
+.icon--big {
   height: 80px;
 }
 
-.icon-back{
+.icon-back {
   align-items: center;
   border-radius: 50%;
   display: flex;
@@ -126,13 +125,53 @@ width: 30px;
   width: 150px;
 }
 
-.icon-back .icon{
+.icon-back .icon {
   height: 80px;
   margin: 0 auto;
   max-height: 80px;
   max-width: 80px;
 }
 
-.icon-back--white{
+.icon-back--white {
   background-color: #fff;
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.list > li {
+  border-bottom: 1px solid #252525;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+}
+
+.list > li a {
+  color: #aaaaaa;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  transition: color 0.2s;
+}
+
+.list > li a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width:768px) {
+  .list{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list > li {
+    border:none;
+  }
+}
+
+
+
+
