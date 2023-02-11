@@ -75,6 +75,7 @@ h2,
 h3,
 h4 {
   font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -211,8 +212,8 @@ h3 {
 .btn{
   background-color: var(--color-accent);
   border-radius: 40px;
-  border:none
-  color: #fff;
+  border:none;
+  color : #fff;
   cursor: pointer;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.8rem;
