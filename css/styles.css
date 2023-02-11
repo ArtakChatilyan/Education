@@ -235,3 +235,32 @@ h3 {
     font-size: 2.4rem;
   }
 }
+
+/* Slide thumbs */
+.thumb{
+  border-radius: 50%;
+  display: inline-block;
+  height: 14px;
+  margin: 0 .3rem;
+  width: 14px;
+}
+
+.thumb--dark{
+  border: 2px solid #1a1a1a;
+}
+
+.thumb--light{
+  border: 2px solid #fff;
+}
+
+.thumb--selected{
+  background-color: var(--color-accent);
+}
+
+@media screen and (min-width:768px){
+  .thumb{
+    width: 22px;
+    height: 22px;
+  }
+}
+
