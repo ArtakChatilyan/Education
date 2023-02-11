@@ -161,17 +161,48 @@ h3 {
   color: #fff;
 }
 
-@media screen and (min-width:768px) {
-  .list{
+@media screen and (min-width: 768px) {
+  .list {
     display: flex;
     justify-content: space-between;
   }
 
   .list > li {
-    border:none;
+    border: none;
   }
 }
 
+/* Collapsible */
+.collapsible {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.collapsible-icon {
+  margin: 2rem 2rem 0 0;
+  cursor: pointer;
+}
 
+.collapsible-body {
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  transition: all .2s;
+}
 
+.collapsible-expanded .collapsible-body {
+  opacity: 1;
+  max-height: 100vh;
+}
+
+@media screen and (min-width:768px) {
+  .collapsible-icon {
+    display: none;
+  }
+  
+  .collapsible-body {
+    max-height: 100vh;
+    opacity: 1;
+  }
+}
