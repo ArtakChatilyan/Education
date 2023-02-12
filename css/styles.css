@@ -143,11 +143,12 @@ h3 {
   margin: 0;
   padding: 0;
   text-align: center;
+  white-space: nowrap;
 }
 
 .list > li {
   border-bottom: 1px solid #252525;
-  margin: 1rem auto;
+  margin: 1rem 1.6rem 1rem 0;
   padding-bottom: 1rem;
 }
 
@@ -180,24 +181,34 @@ h3 {
   justify-content: space-between;
 }
 
+.collapsible__header{
+   display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+}
+
 .collapsible-icon {
-  margin: 2rem 2rem 0 0;
   cursor: pointer;
 }
 
 .collapsible-body {
-  width: 100%;
   max-height: 0;
   opacity: 0;
   transition: all .2s;
+  width: 100%;
 }
 
 .collapsible-expanded .collapsible-body {
-  opacity: 1;
   max-height: 100vh;
+  opacity: 1;
 }
 
 @media screen and (min-width:768px) {
+  .collapsible {
+    flex-wrap: nowrap;
+  }
+
   .collapsible-icon {
     display: none;
   }
@@ -220,6 +231,7 @@ h3 {
   font-weight: bold;
   padding: 1.4rem 3rem;
   transition: background-color .2s;
+  white-space: nowrap;
 }
 
 .btn:hover{
@@ -313,6 +325,50 @@ h3 {
 @media screen and (min-width:768px) {
   .form-item{
     text-align: left;
+  }
+}
+
+/* Blocks */
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar .collapsible{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.navbar-header{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-header .icon{
+  width: 30px;
+  height: 32px;
+}
+
+.navbar-header span{
+  flex-grow: 1;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width:768px){
+  .navbar-header span{
+    font-size: 2.4rem;
+    margin-left: 3rem;
+  }
+
+  .navbar-header .icon{
+    width: 40px;
   }
 }
 
