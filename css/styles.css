@@ -81,7 +81,6 @@ h4 {
   font-size: 2.4rem;
 }
 
-
 h2,
 h3 {
   color: var(--color-heading);
@@ -345,18 +344,18 @@ h3 {
   gap: 2rem;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
   .grid-cols2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .grid-cols3{
+  .grid-cols3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .grid-cols3{
+  .grid-cols3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -443,11 +442,11 @@ h3 {
 }
 
 /* Feature */
-.block-feature{
-background-color: var(--color-back-secondary);
+.block-feature {
+  background-color: var(--color-back-secondary);
 }
 
-.feature{
+.feature {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -456,6 +455,50 @@ background-color: var(--color-back-secondary);
   text-align: center;
 }
 
-.feature h4{
+.feature h4 {
   margin: 3rem auto 2rem;
+}
+
+/* Plans */
+.block-plan .grid{
+  row-gap: 4rem;
+}
+
+.plan {
+  max-width: 360px;
+  position: relative;
+  cursor: pointer;
+}
+
+.plan:hover .plan__body{
+  background-color: rgba(39, 174, 96, 0.6);
+}
+
+.plan:hover h4{
+  transform: scale(1.1);
+}
+
+.plan__body {
+  align-items: center;
+  background-color: rgba(39, 174, 96, 0.8);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: background-color .2s;
+}
+
+.plan h4 {
+  color: var(--color-text-secondary);
+  transition: transform .2s;
+}
+
+.plan__info {
+  color: var(--color-text-secondary);
+  text-align: center;
 }
