@@ -296,6 +296,7 @@ h3 {
 /* Inputs */
 
 .input {
+  background: transparent;
   border: none;
   border-bottom: 1px solid rgba(72, 73, 74, 0.2);
   color: #1a1a1a;
@@ -501,4 +502,53 @@ h3 {
 .plan__info {
   color: var(--color-text-secondary);
   text-align: center;
+}
+
+/* Subscribe */
+.subscribe{
+  background-position-x: center;
+  background-position-y: 85%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url("../images/subscribe.jpg");
+}
+
+.subscribe__content{
+  align-items: center;
+  background-color: rgba(26, 26, 26, .7);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 3rem 2rem 6rem;
+  width: 100%;
+}
+
+.subscribe span{
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subscribe .input{
+  border-bottom: 2px solid rgb(114, 115, 116);
+  margin: 3rem auto;
+}
+
+@media screen and (min-width:768px){
+  .subscribe__content{
+    flex-direction: row;
+    padding: 6rem;
+  }
+
+  .subscribe .input{
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width:992px){
+  .subscribe span{
+    white-space: nowrap;
+  }
 }
