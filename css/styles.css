@@ -363,6 +363,10 @@ h3 {
 }
 
 /* Navbar */
+.navbar{
+  padding: 3rem 2rem 0;
+}
+
 .navbar .collapsible {
   display: flex;
   justify-content: space-between;
@@ -389,7 +393,11 @@ h3 {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .navbar{
+    padding: 4rem 10rem 0;
+  }
+
   .navbar-header span {
     font-size: 2.4rem;
     margin-left: 3rem;
@@ -635,5 +643,73 @@ h3 {
 @media screen and (min-width:768px) {
   .block-footer .collapsible-body{
     margin-top: 0;
+  }
+}
+
+/* Banner */
+.block-banner .container{
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("../images/banner.jpg");
+  height: 700px;
+}
+
+.banner-content{
+  background-color: rgba(26,26,26, .9);
+  height: 100%;
+  width: 100%;
+}
+
+.block-banner .collapsible{
+  position: relative;
+}
+
+.block-banner .collapsible-body{
+  position: absolute;
+  right: 50px;
+  width: 50%;
+}
+
+.block-banner .list>li{
+  margin-bottom: .5rem;
+  margin-top: 0;
+  padding-bottom: .5rem;
+}
+
+.banner-content {
+  position: relative;
+}
+
+.banner-body{
+  bottom: 20px;
+  padding: 0 3rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.banner-info{
+  color: #fff;
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 6rem auto 8rem;
+}
+
+.banner-body .btn{
+  margin-bottom: 10rem;
+}
+
+@media screen and (min-width:768px) {
+  .block-banner .collapsible{
+    position: unset;
+  }
+  
+  .block-banner .collapsible-body{
+    position: unset;
+    width: 100%;
   }
 }
