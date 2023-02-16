@@ -824,6 +824,7 @@ h3 {
 /* Blogs */
 .blog{
   width: 260px;
+  min-width: 260px;
     text-align: center;
   margin: 0 2rem;
 }
@@ -1049,4 +1050,24 @@ h3 {
     display: flex;
     justify-content: center;
   }
+}
+
+/* Block Blog*/
+
+.block-blog{
+  background-color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.blog__body{
+  overflow: hidden;
+cursor: grab;
+margin-bottom: 3rem;
+}
+
+.blog__slider{
+  
+  display: flex;
+  margin: 4rem auto;
 }
