@@ -411,6 +411,11 @@ h3 {
 }
 
 /* Intro */
+.intro{
+background-color: var(--color-back-primary);
+padding: 4rem;
+}
+
 .intro__image {
   width: 100%;
   padding: 2rem;
@@ -440,6 +445,12 @@ h3 {
   font-size: 1.8rem;
   font-weight: bold;
   margin-left: 1rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.intro__title:hover{
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 992px) {
@@ -458,6 +469,10 @@ h3 {
   background-color: var(--color-back-secondary);
 }
 
+.block-feature.container{
+  padding: 4rem 0;
+}
+
 .feature {
   align-items: center;
   display: flex;
@@ -469,9 +484,20 @@ h3 {
 
 .feature h4 {
   margin: 3rem auto 2rem;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.feature h4:hover{
+  transform: scale(1.1);
 }
 
 /* Plans */
+.block-plan.container{
+background-color: var(--color-back-primary);
+padding: 6rem 0;
+}
+
 .block-plan .grid {
   row-gap: 4rem;
 }
@@ -565,6 +591,11 @@ h3 {
 }
 
 /* Contact */
+.block-contact.container{
+  background-color: var(--color-back-primary);
+  padding: 6rem 0;
+}
+
 .contact-map {
   /* width: 100%; */
   max-width: 555px;
@@ -631,7 +662,8 @@ h3 {
 }
 
 .block-footer .collapsible {
-  padding-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .block-footer .collapsible__header span {
@@ -639,12 +671,16 @@ h3 {
 }
 
 .block-footer .collapsible-body {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 @media screen and (min-width: 768px) {
   .block-footer .collapsible-body {
     margin-top: 0;
+  }
+
+  .block-footer .collapsible__header {
+    justify-content: space-between;
   }
 }
 
@@ -888,8 +924,9 @@ h3 {
 
 /* Block cards*/
 .block-card .container{
-  padding:0 6%;
+  padding:6rem 6%;
   text-align: center;
+  background-color: var(--color-back-primary);
 }
 
 .block-card .grid{
@@ -939,7 +976,7 @@ h3 {
 
 /* Profiles */
 .block-profile .container{
-  padding:0 6% 20px;
+  padding:6rem 6% ;
   text-align: center;
   background-color: var(--color-back-secondary);
 }
@@ -979,10 +1016,10 @@ h3 {
 /* Testimonial Block*/
 .block-testimonial {
   text-align: center;
-  background-color: var(--color-back-secondary);
 }
 
 .block-testimonial .container{
+  background-color: var(--color-back-secondary);
   padding:40px 6% 30px;
 }
 
@@ -1055,9 +1092,12 @@ h3 {
 /* Block Blog*/
 
 .block-blog{
-  background-color: #fff;
   text-align: center;
-  padding: 3rem 0;
+}
+
+.block-blog .container{
+  background-color: var(--color-back-primary);
+  padding: 6rem 0;
 }
 
 .blog__body{
